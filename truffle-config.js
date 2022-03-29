@@ -2,7 +2,7 @@ const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
 const bscscanApiKey = fs.readFileSync(".bscscanApiKey").toString().trim();
 
-const HDWalletProvider = require("truffle-hdwallet-provider");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 module.exports = {
   /**
